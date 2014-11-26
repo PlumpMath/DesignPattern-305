@@ -5,35 +5,43 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Service.Singleton;
+import singleton.Caixa;
 
 public class SingletonTest
 {
-    Singleton singleton; 
+    Caixa caixa; 
     
-    public SingletonTest() {
+    public SingletonTest()
+    {
+        
     }
     
     @BeforeClass
-    public static void setUpClass() {
+    public static void setUpClass()
+    {
+        
     }
     
     @AfterClass
-    public static void tearDownClass() {
+    public static void tearDownClass()
+    {
+        
     }
     
     @Before
-    public void setUp() {
-        singleton = Singleton.getInstance();
+    public void setUp()
+    {
+        caixa = caixa.getInstance();
     }
     
     @After
-    public void tearDown() {
+    public void tearDown()
+    {
     }
     
     @Test
     public void testarSeSingletonEstaFuncionando()
     {
-        Assert.assertEquals(Singleton.getInstance(), singleton);
+        Assert.assertEquals(Caixa.getInstance(), caixa);
     }
 }
