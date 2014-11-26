@@ -1,0 +1,10 @@
+package Template;
+
+/**
+ *
+ * @author AndersonLuis
+ */
+public interface IBicicleta
+{
+    public Double obterValor();
+}
