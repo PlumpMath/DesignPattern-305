@@ -3,7 +3,7 @@ package Factory;
 import Template.Bicicleta;
 import Template.BicicletaCorrida;
 import Template.BicicletaRampa;
-import template.BicicletaInexistenteException;
+import Template.BicicletaInexistenteException;
 
 /**
  *
