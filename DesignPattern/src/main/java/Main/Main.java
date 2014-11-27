@@ -1,13 +1,12 @@
 package Main;
 
-/**
- *
- * @author AndersonLuis
- */
+
 public class Main
 {
+    
     public static void main(String... args)
     {
-        System.out.println("A IMPLEMENTAR");
+        Bicicleta b = FabricaBicicleta.fabricarBicicleta("rampa");
+        System.out.println("Construindo bicicleta");
     }   
 }
