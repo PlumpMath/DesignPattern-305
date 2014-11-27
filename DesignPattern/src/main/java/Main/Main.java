@@ -1,5 +1,6 @@
 package Main;
 import Template.Bicicleta;
+import Template.BicicletaInexistenteException;
 import Factory.FabricaBicicleta;
 
 
@@ -8,7 +9,15 @@ public class Main
     
     public static void main(String... args)
     {
-        Bicicleta b = FabricaBicicleta.fabricarBicicleta("rampa");
-        System.out.println("Construindo bicicleta");
+        try
+        {
+            Bicicleta b = FabricaBicicleta.fabricarBicicleta("rampa");
+            System.out.println("Construindo bicicleta");
+        }
+        catch(BicicletaInexistenteException ex)
+        {
+            System.out.println(ex);
+        }
+        
     }   
 }
