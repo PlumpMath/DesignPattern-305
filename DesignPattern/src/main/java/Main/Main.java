@@ -11,7 +11,7 @@ public class Main
     {
         try
         {
-            Bicicleta b = FabricaBicicleta.fabricarBicicleta("rampa");
+            Bicicleta b = new FabricaBicicleta().fabricarBicicleta("rampa");
             System.out.println("Construindo bicicleta");
         }
         catch(BicicletaInexistenteException ex)
